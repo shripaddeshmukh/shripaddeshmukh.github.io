@@ -1,0 +1,21 @@
+---
+layout: archive
+title: "Paintings"
+permalink: /paintings/
+author_profile: true
+---
+
+{% include base_path %}
+
+I <b>love</b> to paint; it brings such a tranquility of mind.
+Following are some of my works from pandemic period drawn on a tablet.
+I am, in general, very passionate about visual arts.
+
+<br/>
+<br/>
+(For best experience, I would suggest clicking on a painting and navigating through all the paintings via previous-next menu.)
+
+{% for post in site.portfolio %}
+  {% include archive-single.html %}
+{% endfor %}
+

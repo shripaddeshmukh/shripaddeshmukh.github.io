@@ -1,0 +1,121 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+{% if site.author.googlescholar %}
+  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+{% endif %}
+
+{% include base_path %}
+
+<!-- New style rendering if publication categories are defined -->
+{% if site.publication_category %}
+  {% for category in site.publication_category  %}
+    {% assign title_shown = false %}
+    {% for post in site.publications reversed %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+  {% endfor %}
+{% else %}
+  {% for post in site.publications reversed %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% endif %}
+
+<h2>Workshop Papers</h2>
+<hr>
+
+<div class="papers">
+    <div class="paper">
+        <h3><a href="https://arxiv.org/pdf/2307.13192.pdf">Counterfactual Explanation Policies in RL</a></h3>
+        <p><b>S Deshmukh</b>, Srivatsan R, S Vijay, J Subramanian, C Agarwal. 
+        <i>Published at ICML Workshop on Counterfactuals in Minds & Machines, 2023.</i></p>
+    </div>
+    
+    <div class="paper">
+        <h3><a href="https://openaccess.thecvf.com/content/CVPR2023W/CVFAD/papers/Jandial_Gatha_Relational_Loss_for_Enhancing_Text-Based_Style_Transfer_CVPRW_2023_paper.pdf">Gatha: Relational Loss for enhancing text-based style transfer</a></h3>
+        <p>S Jandial, <b>S Deshmukh</b>, A Java, S Shahid, B Krishnamurthy.
+        <i>Published (<b>Oral</b>) at CVPR Workshop on Computer Vision for Fashion, Art, and Design, 2023.</i></p>
+    </div>
+
+    <div class="paper">
+        <h3><a href="https://github.com/IssamLaradji/l3divu/blob/main/l3divu_2023/accepted_no_archive/46.pdf">FODVid: Flow-guided Object Discovery in Videos</a></h3>
+        <p>S Singh, <b>S Deshmukh</b>, M Sarkar, R Jain, M Hemani, B Krishnamurthy.
+        <i>Published at CVPR Workshop on Learning with Limited Labelled Data for Image and Video Understanding, 2023.</i></p>
+    </div>
+
+    <div class="paper">
+        <h3><a href="https://openreview.net/pdf?id=p8_QCs0_q-A">Trajectory-based Explainability Framework for Offline RL</a></h3>
+        <p><b>S Deshmukh</b>, A Dasgupta, C Agarwal, N Jiang, B Krishnamurthy, G Theocharous, J Subramanian.
+        <i>Published at NeurIPS Offline RL Workshop, 2022.</i></p>
+    </div>
+</div>
+
+
+<h2>Patents</h2>
+<hr>
+
+<div class="patents">
+  <div class="patent">
+      <h3>Novel Self-supervised Object Discovery in Videos</h3>
+      <p>Attorney Docket No. P12351-US, 2023</p>
+  </div>
+  <div class="patent">
+      <h3>Account Executive Actionable Digest</h3>
+      <p>Attorney Docket No. P12314-US, 2023</p>
+  </div>
+  <div class="patent">
+      <h3>A Framework for Leveraging LLM Models and RL in Marketing Decision Making</h3>
+      <p>Attorney Docket No. P12223-US, 2023</p>
+  </div>
+  <div class="patent">
+      <h3>Video Object Segmentation through Flow-guided Graph-cut</h3>
+      <p>Attorney Docket No. P12170-US, 2023</p>
+  </div>
+  <div class="patent">
+      <h3>Novel method to propagate personalized error corrections across Forms corpus</h3>
+      <p>Attorney Docket No. P12004-US, 2022</p>
+  </div>
+  <div class="patent">
+      <h3>Novel Trajectory-based Explainability Framework for RL-based Decision Making</h3>
+      <p>Attorney Docket No. P11853-US, 2022</p>
+  </div>
+  <div class="patent">
+      <h3>Forms Similarity Matching Framework for Enhancing RnC tool in AEM Forms</h3>
+      <p>Attorney Docket No. P11882-US, 2022</p>
+  </div>
+  <div class="patent">
+      <h3>A Novel Multimodal One-Shot Detection Approach for Document Snippet Search</h3>
+      <p>Attorney Docket No. P11686-US, 2022</p>
+  </div>
+  <div class="patent">
+      <h3>Semantic Noise based Soft Label Regularization for Distilling Model Knowledge</h3>
+      <p>Attorney Docket No. P11539-US, 2022</p>
+  </div>
+  <div class="patent">
+      <h3>Novel method to simplify data points for easier understanding of neural networks</h3>
+      <p>Attorney Docket No. P11364-US, 2022</p>
+  </div>
+  <div class="patent">
+      <h3>Novel Method and Apparatus to Control Diffusion Model Image Generation</h3>
+      <p>Attorney Docket No. P11343-US, 2022</p>
+  </div>
+  <div class="patent">
+      <h3>Refining Element Associations for Form Structure Extraction</h3>
+      <p>Attorney Docket No. P10768-US, 2021</p>
+  </div>
+  <div class="patent">
+      <h3>Customer Journey Management Using Machine Learning</h3>
+      <p>Attorney Docket No. P10405-US, 2021</p>
+  </div>
+</div>

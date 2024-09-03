@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shripad Deshmukh</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.css">
+
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/magnific-popup.css">
+
+    <link rel="stylesheet" href="../css/aos.css">
+
+    <link rel="stylesheet" href="../css/ionicons.min.css">
+
+    <link rel="stylesheet" href="../css/flaticon.css">
+    <link rel="stylesheet" href="../css/icomoon.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/S_favicon.png">
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html"><span>S</span>hripad</a>
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="../blog.html" class="nav-link"><span>Blogs</span></a></li>
+                </ul>
+            </div>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="../index.html" class="nav-link"><span>Home</span></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="blog-text">
+        <div class="container">
+            <div class="row d-flex no-gutters">
+                <!-- <div class="col-md-6 col-lg-6 pl-md-5 py-5"> -->
+                <div class="row justify-content-start pb-3">
+                    <div class="col-md-12 heading-section py-5 ftco-animate">
+                        <br />
+                        <br />
+                        <h2 class="mb-0">Understanding Paradoxes of Voting</h2>
+                        <h6 class="mb-0"><i>Uploaded on December 7th, 2023.</i></h6>
+                        <br />
+                        <h5 class="mb-4">A brief context</h5>
+                        <p>
+
+                            You might have noticed that a lot of times the final outcome of the democratic voting is 
+                            hard to digest not because of the outcome itself, but because of the way it was decided.
+                            In this blog, we will talk about what should an ideal voting rule should look like and discuss
+                            some standard paradoxes arising out of different voting rules. 
+                            The contents of this blog are based on a term paper I submitted for the course 
+                            on <i> Game Theory</i> in the Jan-May 2020 semester at IIT Madras.
+                        </p>
+                        <h5 class="mb-4">The story begins...</h5>
+                        <p>
+                            The democratic practices involve voting. In a reductionist view, democracy is simply
+                            a mechanism to choose an outcome by allowing voting by all the stakeholders. There are 
+                            N number of voting rules that we can come up with. Interestingly, not all voting 
+                            mechanisms lead to the same outcome. Even if we consider the voting rule is majority
+                            based, i.e., the outcome is decided on the basis of which candidate got the most vote,
+                            we can have another democratic voting rule that might lead to completely different outcome.
+                        </p>
+
+                        <p>
+                            Moreover, the voting rules can be manipulated systematically in order to favor a particular 
+                            outcome. For instance, consider a scenario where stone, paper and scissors are competing for a
+                            position. The election has two rounds, where two candidates go first and 
+                            the winner then goes against the remaining candidate.
+                            The election commissioner gets to set the agenda (an actual term, in social choice theory) regarding 
+                            which pair will compete first. Say the commissioner decides to put stone and paper against each 
+                            other in the first round, the outcome of the election would be scissors as the paper wins in the 
+                            first round but loses to the scissors every time. What would happen if scissors are in the power,
+                            and they pick a favourable election commisioner? This leads to a stable authoritarian regime under 
+                            scissors, although scissors is getting elected democratically!
+                            Leaving out the exaggerations, the reader must have gotten 
+                            my point -- democratic voting is not entirely ideal as even if the agenda was set differently at the beginning,
+                            it will lead to a situation where only one outcome stabilises over the entirity. 
+                            Obviously, questions pop up: What is an ideal voting rule? Does there exist one? We will answer this in steps.
+                        </p>
+                        
+                        <p>
+                            First, we will talk about the voter. We want our voter to be someone
+                             who: (i) gives her choices over every pair of 
+                            candidates (<i>x</i>, <i>y</i>) in terms of <b>clearly</b> preferring one over other (for this blog, we will ignore the case 
+                            where the voter is indifferent about the two) and (ii) prefers <i>x</i> over <i>z</i> given she prefers <i>x</i>
+                            over <i>y</i> and <i>y</i> over <i>z</i>. In simple words, the voter should be able to give a list of preferred candidates
+                            in a descending order. Such voter is called as 'rational' voter.
+                        </p>
+
+                        <p>
+                            If you think about it, our ideal voting rule should look something like: (i) the rule should also produce a rational outcome 
+                            collectively. That is, if we apply a voting rule it should produce a descending order of preferences over the given candidates.
+                            We do not want a scenario where the outcome prefer <i>x</i> over <i>z</i>, when <i>y</i> is preferred
+                            over <i>x</i> and <i>z</i> is preferred over <i>y</i>. If you are wondering why this should be the case, otherwise, the rule will 
+                            produce a cycle among candidates and with cycle you cannot choose one over others.
+                            (ii) Being rational should be enough for a voter to take part in an election. We should not be 
+                            discriminating amongst voters based on their views and opinions.
+                            (iii) If all voters prefer candidate <i>x</i> over candidate <i>y</i>, then the voting rule's outcome should not prefer 
+                            <i>y</i> over <i>x</i>. (iv) The final results concerning a pair (<i>x</i>, <i>y</i>) should depend 
+                            only on the preferences related to <i>x</i> and <i>y</i>, and should not be dependent 
+                            on voters' opinions about third candidate <i>z</i>. (v) The voting rule should not allow dictatorship of single voter, i.e.,
+                            the outcome should not be dependent on single voter's preferences.
+                            In summary, an ideal voting rule should be rational, should allow every 
+                            rational voter, should obey voters' consistent preferences, should not be influenced by voter's opinions about third candidate
+                            while comparing two given candidates and should not allow dictatorship.
+                        </p>
+
+                        <p>
+                            So, does there exist an ideal voting rule which follows everything discussed above? Answer is NO! To prove that 
+                            there doesn't exist one, Kenneth Arrow won a Nobel Prize in Economics. I skip the proof for this blog post. 
+                            As a consequence of Arrow's work, a lot of inconsistencies with voting rules were explained and also, a new 
+                            set of inconsistencies were identified, which are known as 'paradoxes of voting'. Now let's dive into the 
+                            paradoxes one by one.
+                        </p>
+
+                        <p>
+                            <b>(1) Condorcet's paradox</b> (let's simply call this, <i>cycle</i> paradox for remembering it in future). So cycle paradox arises 
+                            if we have three voters 1, 2, and 3, and three candidates <i>x</i>, <i>y</i>, and <i>z</i>, with following preferences:
+                            <br />
+
+                            <!-- Add a table here with preferences given by the voters -->
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Voter</th>
+                                        <th scope="col">1</th>
+                                        <th scope="col">2</th>
+                                        <th scope="col">3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Preferences</th>
+                                        <td><i>x</i> > <i>y</i> > <i>z</i></td>
+                                        <td><i>y</i> > <i>z</i> > <i>x</i></td>
+                                        <td><i>z</i> > <i>x</i> > <i>y</i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <br />
+                            You can see that the outcome of the voting is a cycle, i.e., <i>x</i> > <i>y</i> > <i>z</i> > <i>x</i> and there is no clear winner. 
+                        </p>
+
+                        <p>
+                            <b>(2) Agenda paradox</b> (let's simply call it, <i>stone-paper-scissors</i> paradox). I also talked about this paradox in the beginning of the blog.
+                            The paradox arises due to the end result being dependent on the agenda of voting in the two round election.
+
+                            <!-- Insert image here showing the agenda -->
+                            <br />
+                            <img src="../images/blogs/paradoxes_of_voting/agenda_paradox.png" 
+                                alt="Stone Paper Scissors" 
+                                class="img-fluid" 
+                                style="width: 50%; height: 50%; margin-left: 25%;"
+                                />
+
+                            <br />
+                            We can see that the outcome is dependent on how the two rounds are arranged.
+                        </p>
+
+                        <p>
+                            <b>(3) Dominated-winner paradox</b> (let's call it <i>nobody-wanted-this-guy-to-win</i> paradox). This paradox arises 
+                            when you have a preference profile like this:
+                            
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Voter</th>
+                                        <th scope="col">1</th>
+                                        <th scope="col">2</th>
+                                        <th scope="col">3</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Preferences</th>
+                                        <td><i>x</i> > <i>y</i> > <i>w</i> > <i>z</i></td>
+                                        <td><i>w</i> > <i>x</i> > <i>y</i> > <i>z</i></td>
+                                        <td><i>z</i> > <i>w</i> > <i>x</i> > <i>y</i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            With agenda as shown in the following figure:
+                            <br />
+                            <img src="../images/blogs/paradoxes_of_voting/dominated_winner_paradox.png" 
+                                alt="Dominated Winner Paradox" 
+                                class="img-fluid" 
+                                style="width: 50%; margin-left: 25%;"
+                            />
+                            <br />
+                            The winner <i>y</i> is consistently dominated by <i>x</i> in every voter's preference, but still goes 
+                            on to winning the election. In the literature, the winner <i>y</i> is called a 'Pareto-dominated winner'. 
+                            This paradox might look very familiar regardless of which country you are from. This paradox reveals a major 
+                            loophole in the democratic voting.
+                        </p>
+
+                        <p>
+                            <b>(4) Majority-winner paradox</b> (let's call this <i>but-she-won-the-majority</i> paradox). By the way, the names given 
+                            to the paradoxes are completely fictional and if you find any significant resemblance with any person or event, 
+                            it is purely coincidental, although a part of me doesn't agree with this sentence. Anyway, consider two voting rules:
+                            one is simply majority rule over the candidates and other is a count-based voting rule where each voter gives a count 
+                            3, 2, 1 to her first, second and third preference respectively. The outcome of the voting is decided by the sum of counts and 
+                            the candidate with highest count wins. Now, consider the following preference profile:
+
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Voter</th>
+                                        <th scope="col">1</th>
+                                        <th scope="col">2</th>
+                                        <th scope="col">3</th>
+                                        <th scope="col">4</th>
+                                        <th scope="col">5</th>
+                                        <th scope="col">6</th>
+                                        <th scope="col">7</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">Preferences</th>
+                                        <td><i>x</i> > <i>y</i> > <i>z</i></td>
+                                        <td><i>x</i> > <i>y</i> > <i>z</i></td>
+                                        <td><i>x</i> > <i>y</i> > <i>z</i></td>
+                                        <td><i>y</i> > <i>z</i> > <i>x</i></td>
+                                        <td><i>y</i> > <i>z</i> > <i>x</i></td>
+                                        <td><i>y</i> > <i>x</i> > <i>z</i></td>
+                                        <td><i>z</i> > <i>x</i> > <i>y</i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            The candidate <i>x</i> wins in the majority rule by 4-3 against <i>y</i>, but <i>y</i> wins the count-based voting by 16-15.
+                            Winner <i>y</i> is also democratically elected by the way, so is a legit winner. So, accept it.
+                        </p>
+
+                        <p>
+                            With these, we come to the end of the discussion on paradoxes.
+                        </p>
+
+                        
+                        <h5 class="mb-4">The conclusion is...</h5>
+                        <p>
+                            If you want to know, this is how I concluded my term paper:
+                            "Voting might lead to intransitive results, agenda based voting rules can be manipulated by
+                            agenda creator, Borda count can be manipulated by truncation, plurality rule doesn't satisfy
+                            independence of irrelevant alternatives, voting based on Condorcet's rule might not give a
+                            Condorcet's winner -- all these underline the fact that every voting rule has its inherent 
+                            flaw. Before establishing democratic institutions, it is good to keep the paradoxes of voting as caveats
+                            in the mind. One might use the paradoxes to argue against democracy, but we think the roots
+                            of democracy will become even firmer if voters know these paradoxes a priori."
+                        </p>
+
+                        <p>
+                            And, I will conclude this blog by: 
+
+                            "So, in the current blog, we saw cycle paradox, stone-paper-scissors paradox, nobody-wanted-this-guy-to-win paradox, and 
+                            but-she-won-the-majority paradox. There are many other interesting paradoxes which you can find online. If you want to read 
+                            the actual term-paper, please feel free to contact me. I will be happy to share it with you.
+                            
+                            Remember, the 
+                            democratic voting systems have their own flaws and knowing these flaws is the first step towards making a better democracy.
+                            In case, someone draws a conclusion that democracy is not the best system, then I would like to quote a famous saying:
+                            <i>'Democracy is the worst form of government, except for all the others.'</i>
+                            "
+                        </p>
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script>
+                        All rights reserved | This template is made with <i class="icon-heart color-danger"
+                            aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen">
+        <svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+        </svg>
+    </div>
+
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.easing.1.3.js"></script>
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <script src="../js/jquery.stellar.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/aos.js"></script>
+    <script src="../js/jquery.animateNumber.min.js"></script>
+    <script src="../js/scrollax.min.js"></script>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
