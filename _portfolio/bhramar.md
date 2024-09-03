@@ -6,5 +6,3 @@ date: 2022-10-16
 ---
 
 <img src="/images/paintings/bumble_bee.png" alt="Bhramar" width="400"/>
-
-touch  chrysanthamum.md kabir.md tricolor.md vitthal.md
