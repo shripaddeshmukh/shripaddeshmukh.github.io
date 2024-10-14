@@ -1,0 +1,720 @@
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+
+<meta charset="utf-8">
+
+
+
+<!-- begin SEO -->
+
+
+
+
+
+
+
+
+
+<title>Understanding Paradoxes of Voting - Shripad Deshmukh</title>
+
+
+
+
+
+
+
+<meta property="og:locale" content="en-US">
+<meta property="og:site_name" content="Shripad Deshmukh">
+<meta property="og:title" content="Understanding Paradoxes of Voting">
+
+
+  <link rel="canonical" href="http://localhost:4000/posts/2023/12/paradoxes_of_voting/">
+  <meta property="og:url" content="http://localhost:4000/posts/2023/12/paradoxes_of_voting/">
+
+
+
+  <meta property="og:description" content="You might have been frustrated by the ways of electing an option democratically, not necessarily because of the outcome of the process, but because of the innate nature of the choice rule employed. In this blog, we will discuss what constitutes an ideal voting rule, and further use a prominent result in social choice theory that asserts the impossibility of such an ideal rule. As a consequence of this result, the nature of voting becomes inherently paradoxical, of which we will understand a few fascinating instances.">
+
+
+
+
+
+  
+
+  
+
+
+
+
+
+  <meta property="og:type" content="article">
+  <meta property="article:published_time" content="2023-12-24T00:00:00-08:00">
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Shripad Deshmukh",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+<!-- end SEO -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Shripad Deshmukh Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<meta http-equiv="cleartype" content="on">
+    
+
+<!-- start custom head snippets -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="http://localhost:4000/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="60x60" href="http://localhost:4000/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="72x72" href="http://localhost:4000/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="76x76" href="http://localhost:4000/images/apple-touch-icon-76x76.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="114x114" href="http://localhost:4000/images/apple-touch-icon-114x114.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="120x120" href="http://localhost:4000/images/apple-touch-icon-120x120.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="144x144" href="http://localhost:4000/images/apple-touch-icon-144x144.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="152x152" href="http://localhost:4000/images/apple-touch-icon-152x152.png?v=M44lzPylqQ">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:4000/images/apple-touch-icon-180x180.png?v=M44lzPylqQ">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-32x32.png?v=M44lzPylqQ" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/android-chrome-192x192.png?v=M44lzPylqQ" sizes="192x192">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-96x96.png?v=M44lzPylqQ" sizes="96x96">
+<link rel="icon" type="image/png" href="http://localhost:4000/images/favicon-16x16.png?v=M44lzPylqQ" sizes="16x16">
+<link rel="manifest" href="http://localhost:4000/images/manifest.json?v=M44lzPylqQ">
+<link rel="mask-icon" href="http://localhost:4000/images/safari-pinned-tab.svg?v=M44lzPylqQ" color="#000000">
+<link rel="shortcut icon" href="/images/favicon.ico?v=M44lzPylqQ">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="http://localhost:4000/images/mstile-144x144.png?v=M44lzPylqQ">
+<meta name="msapplication-config" content="http://localhost:4000/images/browserconfig.xml?v=M44lzPylqQ">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/academicons.css"/>
+
+
+<!-- Support for MatJax -->
+<script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <button><div class="navicon"></div></button>
+        <ul class="visible-links">
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="http://localhost:4000/">Shripad Deshmukh</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/publications/">Publications</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/paintings/">Paintings</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/year-archive/">Blog Posts</a></li>
+          
+            
+            <li class="masthead__menu-item"><a href="http://localhost:4000/cv/">CV</a></li>
+          
+        </ul>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    
+
+
+
+
+
+<div id="main" role="main">
+  
+
+
+  <div class="sidebar sticky">
+  
+
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  <div class="author__avatar">
+    
+    	<img src="http://localhost:4000/images/profile.jpg" class="author__avatar" alt="Shripad Vilasrao Deshmukh">
+    
+  </div>
+
+  <div class="author__content">
+    <h3 class="author__name">Shripad Vilasrao Deshmukh</h3>
+    
+    <p class="author__bio">I work on designing deployable sequential decision-making AI</p>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      <!-- Font Awesome icons / Biographic information  -->
+      
+      
+        <li class="author__desktop"><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>UMass Amherst</li>
+      
+      
+      
+        <li><a href="mailto:deshmukh.shripad.v@gmail.com"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>Email</a></li>
+      
+
+      <!-- Font Awesome and Academicons icons / Academic websites -->
+            
+      
+        <li><a href="https://scholar.google.com/citations?user=g90em_oAAAAJ"><i class="ai ai-google-scholar icon-pad-right"></i>Google Scholar</a></li>
+      
+      
+      
+      
+                              
+      
+
+      <!-- Font Awesome icons / Repositories and software development -->
+      
+            
+            
+      
+        <li><a href="https://github.com/shripaddeshmukh"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i>Github</a></li>
+      
+            
+            
+
+      <!-- Font Awesome icons / Social media -->
+      
+      
+            
+      
+      
+        <li><a href="https://www.goodreads.com/shripad_deshmukh"><i class="fab fa-fw fa-goodreads icon-pad-right" aria-hidden="true"></i>Goodreads</a></li>
+                  
+                  
+      
+            
+            
+      
+        <li><a href="https://www.linkedin.com/in/shripad-deshmukh"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
+            
+      
+            
+                  
+            
+      
+            
+            
+      
+        <li><a href="https://twitter.com/shripad_deshmu"><i class="fab fa-fw fa-x-twitter icon-pad-right" aria-hidden="true"></i>X (formerly Twitter)</a></li>
+      
+              
+      
+                      
+      
+      
+            
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Understanding Paradoxes of Voting">
+    <meta itemprop="description" content="You might have been frustrated by the ways of electing an option democratically, not necessarily because of the outcome of the process, but because of the innate nature of the choice rule employed. In this blog, we will discuss what constitutes an ideal voting rule, and further use a prominent result in social choice theory that asserts the impossibility of such an ideal rule. As a consequence of this result, the nature of voting becomes inherently paradoxical, of which we will understand a few fascinating instances.">
+    <meta itemprop="datePublished" content="December 24, 2023">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Understanding Paradoxes of Voting
+</h1>
+          
+            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  8 minute read
+	
+</p>
+          
+        
+        
+        
+          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2023-12-24T00:00:00-08:00">December 24, 2023</time></p>
+            
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        <p>You might have been frustrated by the ways of electing an option democratically, not necessarily because of the outcome of the process, but because of the innate nature of the choice rule employed. In this blog, we will discuss what constitutes an ideal voting rule, and further use a prominent result in social choice theory that asserts the impossibility of such an ideal rule. As a consequence of this result, the nature of voting becomes inherently paradoxical, of which we will understand a few fascinating instances.</p>
+
+<p>On a side note, the contents of this blog are based on a term paper I submitted for the course 
+on <i> Game Theory</i> in the Jan-May 2020 semester at IIT Madras.</p>
+
+<h2 class="mb-4">The story begins...</h2>
+<p>
+    The democratic practices involve voting. In a reductionist view, democracy is simply
+    a mechanism to choose an outcome by allowing voting by all the stakeholders. There are 
+    N number of voting rules that we can come up with. Interestingly, not all voting 
+    mechanisms lead to the same outcome when used by a fixed set of voters trying to elect a candidate from a fixed set of candidates.
+</p>
+
+<p>
+    Moreover, the voting rules can be manipulated systematically in order to favor a particular 
+    outcome. For instance, consider a scenario where stone, paper and scissors are competing for a
+    position. Say the election is to happen in two rounds, where two designated candidates go first and 
+    the winner of this round then stands against the remaining third candidate.
+    Here's a twist: there is an election commissioner who has the responsibility to assign candidates to the rounds. Consider if the commissioner decides to put stone and paper against each other in the first round, the outcome of the election would be scissors as the paper wins in the first round but loses to the scissors every time. What would happen if scissors are in the power,
+    and they pick a favourable election commisioner? This leads to  <b>a stable democratically-elected authoritarian regime</b> under 
+    scissors! Exaggeration aside -- a "democratic" voting applied without understanding loopholes in it can cause serious ramifications. Obviously, one might think: What is an ideal voting rule? Does there exist one? If there is one, why isn't one used everywhere? 
+    
+    Let's dive in.
+</p>
+
+<p>
+    First, we will formalize a few things starting with characterisation of a voter in our discussion. We want our voter to be someone who: (i) has a strict preference between every possible pair of
+    candidates (<i>x</i>, <i>y</i>), and (ii) if she prefers <i>x</i> over <i>y</i> and <i>y</i> over <i>z</i>, then she must prefer <i>x</i> over <i>z</i>. As a consequence, we simply require the voter to provide an order over candidates
+    in a descending preference order. We will call such a voter, a 'rational' voter.
+</p>
+
+<p>
+    People studied what can be considered an ideal voting rule in mid 20th century as democracy was becoming increasingly popular across the globe. Here is a standard list of characterisitcs majority agree upon: (i) when rational voters vote using a voting rule, the voting rule should collectively produce a rational outcome. That is, like the individual voter,  the voting rule should, collectively, output a descending order of preferences over the candidates. What we don't want the voting rule to lead to is a cyclic preference: where candidate <i>x</i> is preferred over candidate <i>y</i>, <i>y</i> over <i>z</i>, but <i>z</i> is preferred over <i>x</i>. With such a cycle, it is impossible to choose one among the many.
+    (ii) Apart from a voter being rational, there should not be any other restrictions put on or privileges given to the voter based on their personal affiliations. 
+    (iii) If all voters prefer candidate <i>x</i> over candidate <i>y</i>, then the voting rule's outcome should not prefer 
+    <i>y</i> over <i>x</i> collectively. (iv) The final results of voting rule concerning a pair (<i>x</i>, <i>y</i>) should depend 
+    only on the voters' preferences pertaining to <i>x</i> and <i>y</i>, and it should not be dependent 
+    on voters' tendencies regarding any other candidate <i>z</i>. (v) The voting rule should not allow dictatorship of any single voter, i.e.,
+    the outcome should not be dependent on one voter's preferences.
+    
+    
+    To quickly summarize, an ideal voting rule should be rational, should allow every 
+    rational voter, should obey voters' consistent preferences, should not influence choice between two candidates based on the presence of third candidate and should not allow dictatorship.
+</p>
+
+<p>
+    Does there exist a voting rule that satisfies all the characteristics of the ideal voting rule? Answer is <b>NO</b>! Prof. Kenneth Arrow proved this result and he went on to win the Nobel Prize in Economics for his discovery. Once the non-existence is proved, we are inclined to understand what are the drawbacks of different voting rules and if there are loopholes that need to be addressed. The study of different voting rules lead us some very interesting 'paradoxes of voting'.
+</p>
+
+<p>
+    <b>(1) Condorcet's paradox:</b> One of the earliest paradoxes discovered. Analogous to AC-DC current wars, there was a war for which voting rule was superior in mid 19th century which made people find flaws in each other's voting rules. Condorcet's paradox is a product of the same. Let's call this paradox as 'cycle paradox'. It arises 
+    if we have three voters 1, 2, and 3, and three candidates <i>x</i>, <i>y</i>, and <i>z</i>, with following preferences:
+    <br />
+
+    <!-- Add a table here with preferences given by the voters -->
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Voter</th>
+                <th scope="col">1</th>
+                <th scope="col">2</th>
+                <th scope="col">3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Preferences</th>
+                <td><i>x</i> &gt; <i>y</i> &gt; <i>z</i></td>
+                <td><i>y</i> &gt; <i>z</i> &gt; <i>x</i></td>
+                <td><i>z</i> &gt; <i>x</i> &gt; <i>y</i></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br />
+    The outcome of majority voting generates a cycle, i.e., <i>x</i> &gt; <i>y</i> &gt; <i>z</i> &gt; <i>x</i> with no clear winner.
+</p>
+
+<p>
+    <b>(2) Agenda paradox:</b> This is the same paradox discussed earlier where an election comissioner can orchestrate a democratic autocracy. Let's call this stone-paper-scissors paradox! The paradox arises due to the end result being dependent on the agenda of voting in the two round election.
+
+    <img src="/images/blogs/paradoxes_of_voting/agenda_paradox.png" alt="Agenda Paradox" />
+
+    This image shows three different agenda leading to three different winners. One can possibly do a random assignment of the candidates to the rounds as a solution. However, the assignment itself leads to the result and the democratic process is mere an exercise leading to deterministic outcome conditioned on the assignment.
+</p>
+
+<p>
+    <b>(3) Dominated-winner paradox:</b> This one is my favorite.  This paradox arises 
+    when you have a preference ordering like this:
+    
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Voter</th>
+                <th scope="col">1</th>
+                <th scope="col">2</th>
+                <th scope="col">3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Preferences</th>
+                <td><i>x</i> &gt; <i>y</i> &gt; <i>w</i> &gt; <i>z</i></td>
+                <td><i>w</i> &gt; <i>x</i> &gt; <i>y</i> &gt; <i>z</i></td>
+                <td><i>z</i> &gt; <i>w</i> &gt; <i>x</i> &gt; <i>y</i></td>
+            </tr>
+        </tbody>
+    </table>
+
+    With agenda for voting given in the figure below,
+    <br />
+    <img src="/images/blogs/paradoxes_of_voting/dominated_winner_paradox.png" alt="Dominated Winner Paradox" class="img-fluid" style="width: 50%; margin-left: 25%;" />
+    <br />
+    the winner is <i>y</i>, and is consistently dominated by <i>x</i> in every voter's preference, but still goes 
+    on to winning the election. Formally, the winner <i>y</i> is called a 'Pareto-dominated winner'. My personal nickname for this paradox is  <i>how-come-y-wins-over-x</i> paradox. 
+    You must have seen a version of this paradox in real elections too no matter which part of the world you come from. 
+</p>
+
+<p>
+    <b>(4) Majority-winner paradox:</b> This paradox arises in count-based voting rule. Unlike majority rule where a candidate is chosen by sheer number of votes, in count-based rule, each voter gives a rating to the candidates. For instance, 3 for the highest preferred, 2 for the second and 1 for the least preferred. Collectively, we gather total ratings for each candidate and the candidate with highest rating wins. For the  the following preference profile,
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Voter</th>
+                <th scope="col">1</th>
+                <th scope="col">2</th>
+                <th scope="col">3</th>
+                <th scope="col">4</th>
+                <th scope="col">5</th>
+                <th scope="col">6</th>
+                <th scope="col">7</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Preferences</th>
+                <td><i>x</i> &gt; <i>y</i> &gt; <i>z</i></td>
+                <td><i>x</i> &gt; <i>y</i> &gt; <i>z</i></td>
+                <td><i>x</i> &gt; <i>y</i> &gt; <i>z</i></td>
+                <td><i>y</i> &gt; <i>z</i> &gt; <i>x</i></td>
+                <td><i>y</i> &gt; <i>z</i> &gt; <i>x</i></td>
+                <td><i>y</i> &gt; <i>x</i> &gt; <i>z</i></td>
+                <td><i>z</i> &gt; <i>x</i> &gt; <i>y</i></td>
+            </tr>
+        </tbody>
+    </table>
+    the candidate <i>x</i> is the winner under majority rule by 4-3 against  <i>y</i>. But, curiously, <i>y</i> wins the count-based voting by 16-15. Notice that both ways of electing the candidates are totally democratic in their essence, however, leading to different outcomes. <i>y</i> is as legit winner under count-based rule as <i>x</i> is under majority rule.We have to accept it. I call this paradox, <i>but-she-won-the-majority</i> paradox, a pure coincidence.
+</p>
+
+<h2 class="mb-4">The conclusion is...</h2>
+
+<p>
+    Democratic voting rules might be flawed inherently, but democracy is the best system we have for governing ourselves. Please feel free to reach out to me if you want to read the original term paper I had submitted as the course requirements. There are many other paradoxes that I could not go through due to lack of time. Hope you had great time reading and learning from this blog. 
+</p>
+
+
+        
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fa fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/tags/#game-theory" class="page__taxonomy-item" rel="tag">game theory</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/#social-choice-theory" class="page__taxonomy-item" rel="tag">social choice theory</a><span class="sep">, </span>
+    
+      
+      
+      <a href="http://localhost:4000/tags/#voting" class="page__taxonomy-item" rel="tag">voting</a>
+    
+    </span>
+  </p>
+
+
+
+
+      </footer>
+
+      
+
+<section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=http://localhost:4000/posts/2023/12/paradoxes_of_voting/" class="btn btn--twitter" title="Share on Twitter"><i class="fab fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/posts/2023/12/paradoxes_of_voting/" class="btn btn--facebook" title="Share on Facebook"><i class="fab fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/posts/2023/12/paradoxes_of_voting/" class="btn btn--linkedin" title="Share on LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+      
+
+
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/posts/2013/08/blog-post-2/" class="pagination--pager" title="Thoughts on social circles one hangs out with
+">Previous</a>
+    
+    
+      <a href="http://localhost:4000/posts/2024/10/relationship_between_mh_ka/" class="pagination--pager" title="On historical relationship between the states of Maharashtra and Karnataka
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      
+        <h4 class="page__related-title">You May Also Enjoy</h4>
+      
+      <div class="grid__wrapper">
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/posts/2024/10/relationship_between_mh_ka/" rel="permalink">On historical relationship between the states of Maharashtra and Karnataka
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  2 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2024-10-04T00:00:00-07:00">October 04, 2024</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p>I have been meaning to write this article for a while given how close Maharashtrian (Marathi) and Carnatic (Kannadiga) cultures are, and every once in a while a linguistic issue pops up between the two states because of the prolonged border issue. This article is not going to take any side between the feud as I myself come from the border and I have large extended family on the Karnataka side, too. I wish to highlight my experience while being brought up in a multi-cultural mix and show the more united (and not so talked about) side of these regions.</p>
+
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/posts/2013/08/blog-post-2/" rel="permalink">Thoughts on social circles one hangs out with
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  5 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2023-10-07T00:00:00-07:00">October 07, 2023</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p>I have moved from places to places in my life. From <a href="https://maps.app.goo.gl/Mmn7iBnnbkbJ8W7t8">my village</a> to Solapur, then Solapur to
+Chennai and later to Delhi for work. Recently, I moved to Amherst for my Ph.D. In these hops, I have met many people, lived with different set of
+folks, have had both good and
+not so good interactions. With an ongoing transition in Amherst, in this post, I wanted to jot down few thoughts about how
+change of groups and places affects oneself personally, tell some of my own experiences, and a few random ideas about the dynamics behind this change.</p>
+
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+          
+
+
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/posts/2023/03/vande_bharat_express/" rel="permalink">Vande Bharat
+</a>
+      
+    </h2>
+    
+    
+      <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> 
+
+
+  
+	  3 minute read
+	
+</p>
+    
+
+        
+         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> Published:</strong> <time datetime="2023-03-28T00:00:00-07:00">March 28, 2023</time></p>
+        
+
+    
+    <p class="archive__item-excerpt" itemprop="description"><p>
+  I took <a href="https://en.wikipedia.org/wiki/Vande_Bharat_Express">Vande Bharat Express</a>
+  from Solapur, my home city, to Pune, a nearby metropolis, on 26th March 2023. This was a special occasion for me as these luxury, high-speed trains were launched only a month ago. They cut down around 25-50% of travel time of an average train journey. This blog is my journey experience jot down in few paragraphs. This is also <b>my first public blog</b>.
+</p>
+
+</p>
+    
+    
+    
+
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+</div>
+
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+<a href="/sitemap/">Sitemap</a>
+<!-- end custom footer snippets -->
+
+        
+
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+      <li><a href="http://github.com/shripaddeshmukh"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2024 Shripad Deshmukh. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
+

@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-10-14T16:22:45-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Shripad Deshmukh</title><subtitle>MS/PhD Student at the University of Massachusetts Amherst</subtitle><author><name>Shripad Vilasrao Deshmukh</name><email>deshmukh.shripad.v@gmail.com</email></author><entry><title type="html">On historical relationship between the states of Maharashtra and Karnataka</title><link href="http://localhost:4000/posts/2024/10/relationship_between_mh_ka/" rel="alternate" type="text/html" title="On historical relationship between the states of Maharashtra and Karnataka" /><published>2024-10-04T00:00:00-07:00</published><updated>2024-10-04T00:00:00-07:00</updated><id>http://localhost:4000/posts/2024/10/blog-post-4</id><content type="html" xml:base="http://localhost:4000/posts/2024/10/relationship_between_mh_ka/"><![CDATA[<p>I have been meaning to write this article for a while given how close Maharashtrian (Marathi) and Carnatic (Kannadiga) cultures are, and every once in a while a linguistic issue pops up between the two states because of the prolonged border issue. This article is not going to take any side between the feud as I myself come from the border and I have large extended family on the Karnataka side, too. I wish to highlight my experience while being brought up in a multi-cultural mix and show the more united (and not so talked about) side of these regions.</p>
+
+<h2 class="mb-4">The story begins...</h2>
+
+<figure>
+    <img src="/images/blogs/mh_ka_relation/bankalgi_on_map.png" alt="My village on map in the context of the two states" class="img-fluid" style="width: 50%; margin-left: 25%;" />
+    <figcaption style="align-content: center; font-size: small;">
+        My native place on the map in the context of the two states. Only about 20-25 kms away from the border.
+    </figcaption>
+</figure>
+
+<p>I was brought up in Bankalgi, a village south to the city of Solapur and very close to the Karnataka border. The village is one of the ancient ones with archaelogical studies finding Chalukya-era structures from 8th-10th CE. In my village there are multiple linguistic groups: Marathi, Kannada, Urdu, Telugu (called as language of Sali’s, the term for traditional Telugu handloom workers). Of course, with globalisation, there is a significant population that studies English and is proficient in its usage. As language is the soul of any culture, Bankalgi’s cultural soul is pretty vibrant.</p>
+
+<h3 class="mb-4"> The people of the two states</h3>
+
+<p>Kannada in the ancient times was not limited to the present day Karnataka. It was widely used for official reasons as far as Jabalpur in the central Indian state of Madhya Pradesh, which nearly is 1000 kms from present day border of Kannada speaking region. Most of the Maharashtra in the middle age (400-1200 CE) was ruled by dynasties of Kadamba’s, Chalukya’s, Rashtrakuta’s, Yadava’s. Under these dynasties, Kannada thrived not only in Karnataka, but also in the region of present day Maharashtra alongside with Maharashtri Prakrit.</p>
+
+<p>Basava</p>
+
+<p>The Kannadiga saints in region of Pune</p>
+
+<p>The lingayats</p>
+
+<p>Bahamani’s</p>
+
+<p>Now let’s look at Marathi people</p>
+
+<p>The border population centers:</p>
+
+<p>Solapur: Sonnalage, Latur: Lattalur,</p>
+
+<p>Deities:</p>
+
+<p>Malhari, Mallesh, Mallamma</p>
+
+<p>What transitioned into more distinct</p>
+
+<h2 class="mb-4">The conclusion is...</h2>
+
+<p>To my fellow Marathi and Kannadiga brethren, who live in Mumbai-Pune or Bengaluru-Mysuru regions, the linguistic conflict afflicts the most pain to the people living in the border region. We are the same people as I have tried to explain in the paragraphs above. I myself know how to speak in a North-Carnatic Kannada. I am a great admirer of Carnatic literature (8 Gyanpeeths!!), music</p>]]></content><author><name>Shripad Vilasrao Deshmukh</name><email>deshmukh.shripad.v@gmail.com</email></author><category term="history" /><category term="India" /><category term="Maharashtra" /><category term="Karnataka" /><summary type="html"><![CDATA[I have been meaning to write this article for a while given how close Maharashtrian (Marathi) and Carnatic (Kannadiga) cultures are, and every once in a while a linguistic issue pops up between the two states because of the prolonged border issue. This article is not going to take any side between the feud as I myself come from the border and I have large extended family on the Karnataka side, too. I wish to highlight my experience while being brought up in a multi-cultural mix and show the more united (and not so talked about) side of these regions.]]></summary></entry><entry><title type="html">Understanding Paradoxes of Voting</title><link href="http://localhost:4000/posts/2023/12/paradoxes_of_voting/" rel="alternate" type="text/html" title="Understanding Paradoxes of Voting" /><published>2023-12-24T00:00:00-08:00</published><updated>2023-12-24T00:00:00-08:00</updated><id>http://localhost:4000/posts/2023/12/blog-post-3</id><content type="html" xml:base="http://localhost:4000/posts/2023/12/paradoxes_of_voting/"><![CDATA[<p>You might have been frustrated by the ways of electing an option democratically, not necessarily because of the outcome of the process, but because of the innate nature of the choice rule employed. In this blog, we will discuss what constitutes an ideal voting rule, and further use a prominent result in social choice theory that asserts the impossibility of such an ideal rule. As a consequence of this result, the nature of voting becomes inherently paradoxical, of which we will understand a few fascinating instances.</p>
+
+<p>On a side note, the contents of this blog are based on a term paper I submitted for the course 
+on <i> Game Theory</i> in the Jan-May 2020 semester at IIT Madras.</p>
+
+<h2 class="mb-4">The story begins...</h2>
+<p>
+    The democratic practices involve voting. In a reductionist view, democracy is simply
+    a mechanism to choose an outcome by allowing voting by all the stakeholders. There are 
+    N number of voting rules that we can come up with. Interestingly, not all voting 
+    mechanisms lead to the same outcome when used by a fixed set of voters trying to elect a candidate from a fixed set of candidates.
+</p>
+
+<p>
+    Moreover, the voting rules can be manipulated systematically in order to favor a particular 
+    outcome. For instance, consider a scenario where stone, paper and scissors are competing for a
+    position. Say the election is to happen in two rounds, where two designated candidates go first and 
+    the winner of this round then stands against the remaining third candidate.
+    Here's a twist: there is an election commissioner who has the responsibility to assign candidates to the rounds. Consider if the commissioner decides to put stone and paper against each other in the first round, the outcome of the election would be scissors as the paper wins in the first round but loses to the scissors every time. What would happen if scissors are in the power,
+    and they pick a favourable election commisioner? This leads to  <b>a stable democratically-elected authoritarian regime</b> under 
+    scissors! Exaggeration aside -- a "democratic" voting applied without understanding loopholes in it can cause serious ramifications. Obviously, one might think: What is an ideal voting rule? Does there exist one? If there is one, why isn't one used everywhere? 
+    
+    Let's dive in.
+</p>
+
+<p>
+    First, we will formalize a few things starting with characterisation of a voter in our discussion. We want our voter to be someone who: (i) has a strict preference between every possible pair of
+    candidates (<i>x</i>, <i>y</i>), and (ii) if she prefers <i>x</i> over <i>y</i> and <i>y</i> over <i>z</i>, then she must prefer <i>x</i> over <i>z</i>. As a consequence, we simply require the voter to provide an order over candidates
+    in a descending preference order. We will call such a voter, a 'rational' voter.
+</p>
+
+<p>
+    People studied what can be considered an ideal voting rule in mid 20th century as democracy was becoming increasingly popular across the globe. Here is a standard list of characterisitcs majority agree upon: (i) when rational voters vote using a voting rule, the voting rule should collectively produce a rational outcome. That is, like the individual voter,  the voting rule should, collectively, output a descending order of preferences over the candidates. What we don't want the voting rule to lead to is a cyclic preference: where candidate <i>x</i> is preferred over candidate <i>y</i>, <i>y</i> over <i>z</i>, but <i>z</i> is preferred over <i>x</i>. With such a cycle, it is impossible to choose one among the many.
+    (ii) Apart from a voter being rational, there should not be any other restrictions put on or privileges given to the voter based on their personal affiliations. 
+    (iii) If all voters prefer candidate <i>x</i> over candidate <i>y</i>, then the voting rule's outcome should not prefer 
+    <i>y</i> over <i>x</i> collectively. (iv) The final results of voting rule concerning a pair (<i>x</i>, <i>y</i>) should depend 
+    only on the voters' preferences pertaining to <i>x</i> and <i>y</i>, and it should not be dependent 
+    on voters' tendencies regarding any other candidate <i>z</i>. (v) The voting rule should not allow dictatorship of any single voter, i.e.,
+    the outcome should not be dependent on one voter's preferences.
+    
+    
+    To quickly summarize, an ideal voting rule should be rational, should allow every 
+    rational voter, should obey voters' consistent preferences, should not influence choice between two candidates based on the presence of third candidate and should not allow dictatorship.
+</p>
+
+<p>
+    Does there exist a voting rule that satisfies all the characteristics of the ideal voting rule? Answer is <b>NO</b>! Prof. Kenneth Arrow proved this result and he went on to win the Nobel Prize in Economics for his discovery. Once the non-existence is proved, we are inclined to understand what are the drawbacks of different voting rules and if there are loopholes that need to be addressed. The study of different voting rules lead us some very interesting 'paradoxes of voting'.
+</p>
+
+<p>
+    <b>(1) Condorcet's paradox:</b> One of the earliest paradoxes discovered. Analogous to AC-DC current wars, there was a war for which voting rule was superior in mid 19th century which made people find flaws in each other's voting rules. Condorcet's paradox is a product of the same. Let's call this paradox as 'cycle paradox'. It arises 
+    if we have three voters 1, 2, and 3, and three candidates <i>x</i>, <i>y</i>, and <i>z</i>, with following preferences:
+    <br />
+
+    <!-- Add a table here with preferences given by the voters -->
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Voter</th>
+                <th scope="col">1</th>
+                <th scope="col">2</th>
+                <th scope="col">3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Preferences</th>
+                <td><i>x</i> &gt; <i>y</i> &gt; <i>z</i></td>
+                <td><i>y</i> &gt; <i>z</i> &gt; <i>x</i></td>
+                <td><i>z</i> &gt; <i>x</i> &gt; <i>y</i></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br />
+    The outcome of majority voting generates a cycle, i.e., <i>x</i> &gt; <i>y</i> &gt; <i>z</i> &gt; <i>x</i> with no clear winner.
+</p>
+
+<p>
+    <b>(2) Agenda paradox:</b> This is the same paradox discussed earlier where an election comissioner can orchestrate a democratic autocracy. Let's call this stone-paper-scissors paradox! The paradox arises due to the end result being dependent on the agenda of voting in the two round election.
+
+    <img src="/images/blogs/paradoxes_of_voting/agenda_paradox.png" alt="Agenda Paradox" />
+
+    This image shows three different agenda leading to three different winners. One can possibly do a random assignment of the candidates to the rounds as a solution. However, the assignment itself leads to the result and the democratic process is mere an exercise leading to deterministic outcome conditioned on the assignment.
+</p>
+
+<p>
+    <b>(3) Dominated-winner paradox:</b> This one is my favorite.  This paradox arises 
+    when you have a preference ordering like this:
+    
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Voter</th>
+                <th scope="col">1</th>
+                <th scope="col">2</th>
+                <th scope="col">3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Preferences</th>
+                <td><i>x</i> &gt; <i>y</i> &gt; <i>w</i> &gt; <i>z</i></td>
+                <td><i>w</i> &gt; <i>x</i> &gt; <i>y</i> &gt; <i>z</i></td>
+                <td><i>z</i> &gt; <i>w</i> &gt; <i>x</i> &gt; <i>y</i></td>
+            </tr>
+        </tbody>
+    </table>
+
+    With agenda for voting given in the figure below,
+    <br />
+    <img src="/images/blogs/paradoxes_of_voting/dominated_winner_paradox.png" alt="Dominated Winner Paradox" class="img-fluid" style="width: 50%; margin-left: 25%;" />
+    <br />
+    the winner is <i>y</i>, and is consistently dominated by <i>x</i> in every voter's preference, but still goes 
+    on to winning the election. Formally, the winner <i>y</i> is called a 'Pareto-dominated winner'. My personal nickname for this paradox is  <i>how-come-y-wins-over-x</i> paradox. 
+    You must have seen a version of this paradox in real elections too no matter which part of the world you come from. 
+</p>
+
+<p>
+    <b>(4) Majority-winner paradox:</b> This paradox arises in count-based voting rule. Unlike majority rule where a candidate is chosen by sheer number of votes, in count-based rule, each voter gives a rating to the candidates. For instance, 3 for the highest preferred, 2 for the second and 1 for the least preferred. Collectively, we gather total ratings for each candidate and the candidate with highest rating wins. For the  the following preference profile,
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Voter</th>
+                <th scope="col">1</th>
+                <th scope="col">2</th>
+                <th scope="col">3</th>
+                <th scope="col">4</th>
+                <th scope="col">5</th>
+                <th scope="col">6</th>
+                <th scope="col">7</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Preferences</th>
+                <td><i>x</i> &gt; <i>y</i> &gt; <i>z</i></td>
+                <td><i>x</i> &gt; <i>y</i> &gt; <i>z</i></td>
+                <td><i>x</i> &gt; <i>y</i> &gt; <i>z</i></td>
+                <td><i>y</i> &gt; <i>z</i> &gt; <i>x</i></td>
+                <td><i>y</i> &gt; <i>z</i> &gt; <i>x</i></td>
+                <td><i>y</i> &gt; <i>x</i> &gt; <i>z</i></td>
+                <td><i>z</i> &gt; <i>x</i> &gt; <i>y</i></td>
+            </tr>
+        </tbody>
+    </table>
+    the candidate <i>x</i> is the winner under majority rule by 4-3 against  <i>y</i>. But, curiously, <i>y</i> wins the count-based voting by 16-15. Notice that both ways of electing the candidates are totally democratic in their essence, however, leading to different outcomes. <i>y</i> is as legit winner under count-based rule as <i>x</i> is under majority rule.We have to accept it. I call this paradox, <i>but-she-won-the-majority</i> paradox, a pure coincidence.
+</p>
+
+<h2 class="mb-4">The conclusion is...</h2>
+
+<p>
+    Democratic voting rules might be flawed inherently, but democracy is the best system we have for governing ourselves. Please feel free to reach out to me if you want to read the original term paper I had submitted as the course requirements. There are many other paradoxes that I could not go through due to lack of time. Hope you had great time reading and learning from this blog. 
+</p>]]></content><author><name>Shripad Vilasrao Deshmukh</name><email>deshmukh.shripad.v@gmail.com</email></author><category term="game theory" /><category term="social choice theory" /><category term="voting" /><summary type="html"><![CDATA[You might have been frustrated by the ways of electing an option democratically, not necessarily because of the outcome of the process, but because of the innate nature of the choice rule employed. In this blog, we will discuss what constitutes an ideal voting rule, and further use a prominent result in social choice theory that asserts the impossibility of such an ideal rule. As a consequence of this result, the nature of voting becomes inherently paradoxical, of which we will understand a few fascinating instances.]]></summary></entry><entry><title type="html">Thoughts on social circles one hangs out with</title><link href="http://localhost:4000/posts/2013/08/blog-post-2/" rel="alternate" type="text/html" title="Thoughts on social circles one hangs out with" /><published>2023-10-07T00:00:00-07:00</published><updated>2023-10-07T00:00:00-07:00</updated><id>http://localhost:4000/posts/2013/08/blog-post-2</id><content type="html" xml:base="http://localhost:4000/posts/2013/08/blog-post-2/"><![CDATA[<p>I have moved from places to places in my life. From <a href="https://maps.app.goo.gl/Mmn7iBnnbkbJ8W7t8">my village</a> to Solapur, then Solapur to
+Chennai and later to Delhi for work. Recently, I moved to Amherst for my Ph.D. In these hops, I have met many people, lived with different set of
+folks, have had both good and
+not so good interactions. With an ongoing transition in Amherst, in this post, I wanted to jot down few thoughts about how
+change of groups and places affects oneself personally, tell some of my own experiences, and a few random ideas about the dynamics behind this change.</p>
+
+<h2 class="mb-4">The story begins...</h2>
+<p> 
+    I see change of places and a person's behavior sticking to a particular style as their strategy in a social equilibrium.
+    For those of you who don't know what an equilibrium means, when multiple people interact and
+    work together, there comes a state
+    where everyone defaults to a certain behaviour. Under such equilibria, if you are with family
+    members, you are a totally different person,
+    and when you are with your work place colleagues, you act professionally.
+    If you have multiple friend circles,
+    particularly, if you are like me, who has to move places to places, with a switch of
+    context, your behaviour defaults to a way
+    that is special for that particular circle with which you are hanging out. Many a times, you
+    are held in very high regard in one
+    of these circles and you would want to be equally regarded in the ones you meet in the
+    future. Also, while mixing with new people, you might not want to be associated
+    with a particular ideology. I gave it a thought, how can one carry the image they
+    want to present consistently across multiple groups without offending anyone or being seen
+    as rude?
+</p>
+
+<p>
+    From my personal experience, a crucial part of the answer to the question of smoother transition is very dependent on the time one spends in a
+     circle and how much idea the people in the new group have
+    about you, your work, your accomplishments, etc., already. In an inter-team collaboration,
+    you hardly get time to form good rapport
+    with those you are working with. I have seen research collaboration, where you drop by every
+    other week to ideate and take/give updates.
+    It is very hard to make a lasting impression on the folks involved. But, for purposes of this blog, we will
+    skip the short term engagements and focus on more interesting case of circles where we hang out very frequently.
+    I want to understand how the new person's  
+    self-image changes and how their default behaviours form when they interact with different groups.
+</p>
+
+<p>
+    As I give it a thought, the quality of people you hang out with matters the most while molding your personality around. I will give an example of my class in Solapur from early 2010's. The batch
+    I was part of, which completed grade 10 in 2014, was one of the exceptional batches. Everyone was
+    very hard-working, very sincere, smart, and
+    obidient to teachers; many ideal students in that batch. When I moved to this school from my village, I was astonished by their kindness, innocence and intelligence and always thought of
+    myself as a fortunate guy to get to interact with these folks and learn with them. My own
+    behaviour became reciprocative to these great individuals and overall, I feel, the whole foundation of my future trajectory was laid here. Not to mention, all
+    these awesome folks are doing great in their lives today. Therefore, such a transition to a good social circle as a student helped me a lot.
+</p>
+
+<p>
+    Now comes the reason why I started writing this blog. Not always I have associated with
+    better people. Sometimes in ignorance and
+    sometimes due to the work and education constraints, I had to mix with folks with whom I
+    really shouldn't have mixed, at least in the
+    retrospect. Although you want to act in a very amenable, healthy kind of way with those
+    around you, if the other person's behaviour
+    always hurts your own self-image and distorts your ideal scenario, you are probably in a wrong circle. Some folks just do not want
+    to see you in the way you see yourself although you deserve to be seen that way.  The inspiration from your group really helps the individuals grow their
+    self-images, do great things and contribute overall. But if they are not willing to accept your identity, it will hurt your self-image significantly and might as well lead to negative coping strategies where you let other people push you only because you deem their company dear.
+</p>
+
+<p>
+    To be mindful of how a transition to a circle is affecting me, I have started taking (mental) notes on how my behavior is defaulting and if I like it to default in that particular way. Also, to judge whether I am associating with the right folks, the simplest way obviously is to check whether I am happy hanging out with the folks and whether I am able
+    to pursue higher things which I want to pursue without hesitation.
+    If not, then something needs to change for sure. Seeking better circle is always
+    advantageous, I have found. To me, a better circle is
+    where the people in the circle really care about what I want to do with my life and highly supportive of it. This puts responsibility on me as well to encourage the folks around me in their own endeavours for more fulfilling lives.
+</p>
+
+<h2 class="mb-4">The conclusion is...</h2>
+<p>
+    The circle you are currently in, changes your default behaviour for both good and bad. The
+    equilibrium reached has to be beneficial
+    to everyone. Otherwise, find a better social circle.
+</p>]]></content><author><name>Shripad Vilasrao Deshmukh</name><email>deshmukh.shripad.v@gmail.com</email></author><category term="random" /><category term="life" /><category term="personal" /><summary type="html"><![CDATA[I have moved from places to places in my life. From my village to Solapur, then Solapur to Chennai and later to Delhi for work. Recently, I moved to Amherst for my Ph.D. In these hops, I have met many people, lived with different set of folks, have had both good and not so good interactions. With an ongoing transition in Amherst, in this post, I wanted to jot down few thoughts about how change of groups and places affects oneself personally, tell some of my own experiences, and a few random ideas about the dynamics behind this change.]]></summary></entry><entry><title type="html">Vande Bharat</title><link href="http://localhost:4000/posts/2023/03/vande_bharat_express/" rel="alternate" type="text/html" title="Vande Bharat" /><published>2023-03-28T00:00:00-07:00</published><updated>2023-03-28T00:00:00-07:00</updated><id>http://localhost:4000/posts/2023/03/blog-post-1</id><content type="html" xml:base="http://localhost:4000/posts/2023/03/vande_bharat_express/"><![CDATA[<p>
+  I took <a href="https://en.wikipedia.org/wiki/Vande_Bharat_Express">Vande Bharat Express</a>
+  from Solapur, my home city, to Pune, a nearby metropolis, on 26th March 2023. This was a special occasion for me as these luxury, high-speed trains were launched only a month ago. They cut down around 25-50% of travel time of an average train journey. This blog is my journey experience jot down in few paragraphs. This is also <b>my first public blog</b>.
+</p>
+
+<h2>A brief context</h2>
+<p>
+  I am originally from <a href="https://en.wikipedia.org/wiki/Solapur">Solapur</a>, Maharashtra, located in the western India.
+  Once a bustling industrial city, ranked third in Maharashtra only after Mumbai and Pune,
+  it has now lost its past glamour and is now a simple city with a population of around
+  1.5
+  million.
+  The city is still highly relevant in the modern era as, geographically, it sits in the midst of some of India's largest cities
+  such as Mumbai, Pune, Hyderabad, Bengaluru and Chennai. It has a huge potential of becoming a tier-1 city in the future bridging state of Maharashtra (and possibly Gujarat) with the South India.
+</p>
+
+<figure>
+  <img src="/images/blogs/vande_bharat/train_at_pune_junction.jpg" alt="Vande Bharat Express" style="max-width: 100%;" />
+  <figcaption style="align-content: center; font-size: small;">
+      <center>Majestic Vande Bharat Express standing at Pune Junction</center>
+  </figcaption>
+</figure>
+
+<h2 class="mb-4">My experience traveling with Vande Bharat</h2>
+<p>
+  The <b>look and feel</b> of the coaches is pretty impressive. The catering service is amazing.
+  First, I had a tea and few
+  digestive cookies. Later, they offered us a bellyful of breakfast -- pohe, puri bhaji,
+  mango
+  pickle, diet chiwda,
+  chocopie, mango juice and dahi.
+</p>
+<p>
+  As for the <b>train-wide announcements and automatically opening doors</b>, they were not new
+  to me
+  since I use Delhi metro
+  regularly. Nonetheless, where I was sitting, there was an excitement about how these
+  things
+  work.
+  We did have a laugh at a few grammatical mistakes in the Marathi announcements.
+</p>
+<p>
+  <b>Occupancy</b> was great. The bogey in which I was travelling, it was full. The <a href="https://indianexpress.com/article/cities/mumbai/solapur-shirdi-vande-bharat-trains-witness-good-footfall-8512077/">statistics
+      from Central Railway</a> also confirm
+  the trend. Apparently, the occupancy is about 84% for Solapur-Mumbai-Solapur route and is
+  steadily increasing. In present
+  era, nobody minds spending 1000-1500 Rupees to travel faster.
+</p>
+<p>
+  I saw kids, youngsters and adults clicking photos and videos of the train, both inside
+  as
+  well as outside. Villages in
+  my district like the ones in Karmala taluka, people were struck by the beauty and the
+  agility of this beast. Seemed like
+  some folks were waiting for the train to arrive so that they could watch her majestic
+  run.
+</p>
+<p>
+  Overall, I loved travelling with this train. I would recommend people to make a journey to
+  Solapur on Vande Bharat from Mumbai or Pune. My suggestion would be to plan out a weekend trip with family and
+  visit nearby holy places like Akkalkot, Pandharpur, Tuljapur and Ganagapur.
+</p>
+
+<h2 class="mb-4">And now... the prequel of the story</h2>
+
+<p>
+  Solapur had an operating flight connecting to Mumbai run by <a href="https://en.wikipedia.org/wiki/Kingfisher_Airlines">Kingfisher Airlines</a>, before
+  it
+  went bankrupt. Few years went
+  by and
+  when new players came in to continue operating flights, they found illegal constructions
+  around airport which made it
+  unsafe to
+  fly planes at the existing airport. It elongated into a decade long no-fly blockade, the <a href="https://www.loksatta.com/maharashtra/solapur-siddheshwar-sugar-factory-chimney-to-be-demolished-to-avoid-air-accident-zws-70-2703800/">infamous
+      chimney</a>
+  is considered the symbol of which.
+  The city
+  has seen multiple mayors and commissioners (<a href="https://www.indianbureaucracy.com/p-siva-sankar-ias-posted-as-director-textiles-maharashtra/">P.
+      Siva Sankar</a> being the most notable), but
+  nobody has been able to get the
+  airport running.
+  Therefore, finally a request for high speed train was made to Indian government and
+  Vande
+  Bharat is the result of that.
+  So, does it
+  completely circumvent our need for a operational flight? The answer unfortunately is NO,
+  because reaching Mumbai still
+  takes 6.5 hours which could be covered in just 30-40 minutes by an aeroplane. We are waiting
+  for "The Chosen One" to solve this blockade, because our "chosen ones" have not solved it so
+  far :).
+</p>]]></content><author><name>Shripad Vilasrao Deshmukh</name><email>deshmukh.shripad.v@gmail.com</email></author><category term="travel" /><category term="infrastructure" /><category term="New India" /><summary type="html"><![CDATA[I took Vande Bharat Express from Solapur, my home city, to Pune, a nearby metropolis, on 26th March 2023. This was a special occasion for me as these luxury, high-speed trains were launched only a month ago. They cut down around 25-50% of travel time of an average train journey. This blog is my journey experience jot down in few paragraphs. This is also my first public blog.]]></summary></entry></feed>
