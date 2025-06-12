@@ -67,7 +67,7 @@ You can find my publications [here](/publications/).
 
 ## Service and Leadership
 ------
-- Reviewer for AAAI'25, ICLR'25, ICLR'24, NeurIPS'23.
+- Reviewer for ICML'25, AAAI'25, ICLR'25, ICLR'24, NeurIPS'23.
 - Member of the organizing committee for Adobe Digital Experience (DX) ML Hackathon, 2023.
 - Mentored 9 undergraduate summer interns (2021–2023) at Adobe on RL and multimodal learning projects.
 - Moderator at Liberty, Equality, and Fraternity (LEAF) Society, IIT Madras, January 2020 – May 2020.

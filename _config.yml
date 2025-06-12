@@ -24,7 +24,7 @@ author:
   avatar           : "profile.jpg"
   name             : "Shripad Vilasrao Deshmukh"
   pronouns         : # example: "she/her"  
-  bio              : "I work on designing deployable sequential decision-making AI"
+  bio              : "Developing safe and efficient RL agents"
   location         : # "Sunderland, MA"
   employer         : "UMass Amherst"
   uri              : # URL
