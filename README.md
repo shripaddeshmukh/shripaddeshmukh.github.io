@@ -23,18 +23,57 @@ When you are initially working your website, it is very useful to be able to pre
 1. Clone the repository and made updates as detailed above.
 1. Make sure you have ruby-dev, bundler, and nodejs installed
     
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
+    **On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about):**
     ```bash
     sudo apt install ruby-dev ruby-bundler nodejs
     ```
-    On MacOS the commands are:
+    
+    **On MacOS:**
     ```bash
+    # Install Ruby and Node via Homebrew
     brew install ruby
     brew install node
+    
+    # Add Homebrew Ruby to your PATH (required to use Homebrew Ruby instead of system Ruby)
+    echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc
+    echo 'export PATH="/opt/homebrew/lib/ruby/gems/3.4.0/bin:$PATH"' >> ~/.zshrc
+    
+    # Reload your shell configuration
+    source ~/.zshrc
+    
+    # Install Bundler
     gem install bundler
     ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+    
+    **Note for macOS users:** If you get a permission error when running `gem install bundler`, it means you're using the system Ruby instead of Homebrew Ruby. Make sure you've added Ruby to your PATH and reloaded your shell configuration as shown above.
+
+1. Navigate to your project directory and install dependencies:
+    ```bash
+    cd path/to/your/project
+    bundle install
+    ```
+    If you get errors, delete `Gemfile.lock` and try again.
+
+1. Start the Jekyll development server:
+    ```bash
+    bundle exec jekyll serve -l -H localhost
+    ```
+    The site will be available at `http://localhost:4000/`. The local server will automatically rebuild and refresh the pages on change.
+    
+    Press `Ctrl+C` to stop the server.
+
+### Running the Website (After Initial Setup)
+
+Once you've completed the initial setup, you only need to run these commands each time you want to work on your site:
+
+```bash
+cd path/to/your/project
+bundle exec jekyll serve -l -H localhost
+```
+
+Then open your browser to `http://localhost:4000/`
+
+### Troubleshooting
 
 If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
 
