@@ -51,7 +51,7 @@
 .page__content {
 
   h2 {
-    padding-bottom: 0.5em;
+    padding-bottom: 0.4em;
     border-bottom: 1px solid $border-color;
   }
 
@@ -73,13 +73,17 @@
   }
 
   a {
-    text-decoration: underline;
+    color: $link-color;
+    text-decoration: none;
+    border-bottom: 1px solid rgba($link-color, 0.25);
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 
     &:hover {
-      text-decoration: underline;
+      color: $link-color-hover;
+      border-bottom-color: $link-color;
 
       img {
-        box-shadow: 0 0 10px rgba(#000, 0.25);
+        box-shadow: 0 4px 18px rgba($accent-color, 0.18);
       }
     }
   }

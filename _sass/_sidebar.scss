@@ -94,8 +94,10 @@
     border-radius: 50%;
 
     @include breakpoint($large) {
-      padding: 5px;
+      padding: 4px;
       border: 1px solid $border-color;
+      background: $cream-light;
+      box-shadow: 0 4px 18px rgba($darker-gray, 0.08);
     }
   }
 }
@@ -124,8 +126,16 @@
   }
 }
 .sidebar .author__name {
-  font-family: $sans-serif;
-  font-size: $type-size-5;
+  font-family: $serif;
+  font-size: $type-size-4;
+  font-weight: 600;
+  color: $darker-gray;
+}
+
+.sidebar .author__bio {
+  color: mix(#000, $text-color, 5%);
+  font-style: italic;
+  font-family: $serif;
 }
 
 .sidebar .author__desktop {

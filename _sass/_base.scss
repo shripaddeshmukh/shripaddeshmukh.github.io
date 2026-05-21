@@ -5,6 +5,7 @@ html {
   /* sticky footer fix */
   position: relative;
   min-height: 100%;
+  background-color: $background-color;
 }
 
 body {
@@ -12,8 +13,13 @@ body {
   padding: $masthead-height 0 0;
   padding-bottom: 9em;
   color: $text-color;
+  background-color: $background-color;
   font-family: $global-font-family;
-  line-height: 1.5;
+  font-weight: 400;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -22,10 +28,12 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 2em 0 0.5em;
-  line-height: 1.2;
+  margin: 1.8em 0 0.6em;
+  line-height: 1.25;
   font-family: $header-font-family;
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  color: $darker-gray;
 }
 
 h1 {
@@ -61,6 +69,18 @@ p {
   margin-bottom: 1.3em;
 }
 
+a {
+  color: $link-color;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+
+  &:hover {
+    color: $link-color-hover;
+    border-bottom-color: rgba($link-color, 0.4);
+  }
+}
+
 u,
 ins {
   text-decoration: none;
@@ -94,10 +114,13 @@ abbr[data-original-title] {
 
 blockquote {
   margin: 2em 1em 2em 0;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 0.5em 1.25em;
+  font-family: $serif;
   font-style: italic;
-  border-left: 0.25em solid $primary-color;
+  color: mix(#000, $text-color, 10%);
+  border-left: 3px solid $accent-color-soft;
+  background: rgba($accent-color-soft, 0.12);
+  border-radius: 0 4px 4px 0;
 
   cite {
     font-style: italic;
